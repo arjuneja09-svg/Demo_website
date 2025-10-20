@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /demo-admin.html
+Disallow: /assets/js/
+Disallow: /assets/css/
+
+Sitemap: https://azurepalmresort.com/sitemap.xml

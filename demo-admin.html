@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Admin - Booking Dashboard | Azure Palm Resort</title>
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+</head>
+<body>
+    <div class="admin-header">
+        <div class="container">
+            <div class="admin-header-content">
+                <div>
+                    <h1><i class="fas fa-umbrella-beach"></i> Azure Palm Resort</h1>
+                    <p>Demo Admin Dashboard</p>
+                </div>
+                <a href="index.html" class="btn btn-outline">
+                    <i class="fas fa-home"></i> Back to Website
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="admin-container">
+        <div class="container">
+            <div class="admin-notice">
+                <i class="fas fa-exclamation-triangle"></i>
+                <div>
+                    <h3>Demo Notice - Not for Production Use</h3>
+                    <p>This is a demonstration admin panel that displays booking data stored in your browser's localStorage. In a production environment, this would be a secure, password-protected dashboard connected to a real database with proper authentication and authorization.</p>
+                    <p><strong>Security Note:</strong> Never use localStorage for sensitive data in production. Always use server-side storage with encryption, authentication, and secure API endpoints.</p>
+                </div>
+            </div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalBookings">0</h3>
+                        <p>Total Bookings</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalContacts">0</h3>
+                        <p>Contact Messages</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalRevenue">$0</h3>
+                        <p>Estimated Revenue</p>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-icon">
+                        <i class="fas fa-bed"></i>
+                    </div>
+                    <div class="stat-content">
+                        <h3 id="totalNights">0</h3>
+                        <p>Total Nights</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-calendar-alt"></i> Booking Requests</h2>
+                    <button class="btn btn-outline" id="clearBookings">
+                        <i class="fas fa-trash"></i> Clear All Bookings
+                    </button>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table" id="bookingsTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Guest Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Room Type</th>
+                                <th>Check-In</th>
+                                <th>Check-Out</th>
+                                <th>Nights</th>
+                                <th>Total</th>
+                                <th>Status</th>
+                                <th>Booking Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="bookingsTableBody">
+                            <tr>
+                                <td colspan="11" class="no-data">No bookings found. Bookings will appear here after guests submit the booking form.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admin-section">
+                <div class="section-header">
+                    <h2><i class="fas fa-comments"></i> Contact Messages</h2>
+                    <button class="btn btn-outline" id="clearContacts">
+                        <i class="fas fa-trash"></i> Clear All Messages
+                    </button>
+                </div>
+                <div class="table-container">
+                    <table class="admin-table" id="contactsTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Room Interest</th>
+                                <th>Message</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody id="contactsTableBody">
+                            <tr>
+                                <td colspan="8" class="no-data">No contact messages found. Messages will appear here after guests submit the contact form.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="admin-info">
+                <h3><i class="fas fa-rocket"></i> Ready to Go Live?</h3>
+                <p>To convert this demo into a production-ready booking system, you'll need:</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Backend API (Node.js, Python, PHP, etc.)</li>
+                    <li><i class="fas fa-check"></i> Database (PostgreSQL, MySQL, MongoDB)</li>
+                    <li><i class="fas fa-check"></i> Payment gateway integration (Stripe, PayPal, Square)</li>
+                    <li><i class="fas fa-check"></i> Authentication system for admin access</li>
+                    <li><i class="fas fa-check"></i> Email notification service (SendGrid, Mailgun, AWS SES)</li>
+                    <li><i class="fas fa-check"></i> Real-time availability calendar</li>
+                    <li><i class="fas fa-check"></i> SSL certificate for secure transactions</li>
+                </ul>
+                <p>See the README.md file for detailed implementation guidance.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h2><i class="fas fa-info-circle"></i> About Us</h2>
+                    <p>Azure Palm Resort offers a tranquil escape with luxurious amenities and breathtaking ocean views. Experience unparalleled hospitality and create lasting memories.</p>
+                </div>
+                <div class="footer-section links">
+                    <h2><i class="fas fa-link"></i> Quick Links</h2>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="local-area.html">Local Area</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="admin.html">Admin Login</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section contact">
+                    <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                    <p><strong>Address:</strong> 123 Ocean Drive, Paradise Island, 98765</p>
+                    <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p><strong>Email:</strong> <a href="mailto:info@azurepalmresort.com">info@azurepalmresort.com</a></p>
+                </div>
+                <div class="footer-section social">
+                    <h2><i class="fas fa-share-alt"></i> Follow Us</h2>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Azure Palm Resort | Demo by Armaan Juneja</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/admin.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

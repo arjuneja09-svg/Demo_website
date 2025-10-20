@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Azure Palm Resort</title>
+    <meta name="description" content="Contact Azure Palm Resort for reservations, inquiries, or special requests. We're here to help plan your perfect South Florida escape.">
+    <link rel="canonical" href="https://azurepalmresort.com/contact.html">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-umbrella-beach"></i>
+                    <span>Azure Palm Resort</span>
+                </a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="rooms.html">Rooms</a></li>
+                <li><a href="amenities.html">Amenities</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="attractions.html">Local Area</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="#" class="btn-book-nav" id="bookNowNav">Book Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-hero" id="main-content">
+        <div class="page-hero-content">
+            <h1>Contact Us</h1>
+            <p>We're here to help plan your perfect getaway and answer all your questions</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about your stay? Our team is ready to assist you with reservations, special requests, or any inquiries about Azure Palm Resort.</p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Phone</h3>
+                                <p><a href="tel:+13055550100">+1 (305) 555-0100</a></p>
+                                <span>Available 24/7</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Email</h3>
+                                <p><a href="mailto:reservations@azurepalmresort.com">reservations@azurepalmresort.com</a></p>
+                                <span>Response within 24 hours</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Address</h3>
+                                <p>1234 Ocean Boulevard<br>Miami Beach, FL 33139</p>
+                                <span>United States</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-content">
+                                <h3>Front Desk Hours</h3>
+                                <p>24 Hours a Day<br>7 Days a Week</p>
+                                <span>Always here for you</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container" data-aos="fade-left">
+                    <h2>Send Us a Message</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <input type="text" id="contactName" name="contactName" required>
+                                <span class="error-message" id="contactNameError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactEmail">Email Address *</label>
+                                <input type="email" id="contactEmail" name="contactEmail" required>
+                                <span class="error-message" id="contactEmailError"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactPhone">Phone Number *</label>
+                                <input type="tel" id="contactPhone" name="contactPhone" required>
+                                <span class="error-message" id="contactPhoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="contactRoomType">Room Interest</label>
+                                <select id="contactRoomType" name="contactRoomType">
+                                    <option value="">Select (Optional)</option>
+                                    <option value="Standard Ocean View">Standard Ocean View</option>
+                                    <option value="Deluxe Suite">Deluxe Suite</option>
+                                    <option value="Presidential Suite">Presidential Suite</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="contactCheckIn">Preferred Check-In</label>
+                                <input type="date" id="contactCheckIn" name="contactCheckIn">
+                            </div>
+                            <div class="form-group">
+                                <label for="contactCheckOut">Preferred Check-Out</label>
+                                <input type="date" id="contactCheckOut" name="contactCheckOut">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contactMessage">Your Message *</label>
+                            <textarea id="contactMessage" name="contactMessage" rows="6" required placeholder="Tell us how we can help you..."></textarea>
+                            <span class="error-message" id="contactMessageError"></span>
+                        </div>
+
+                        <div class="form-info">
+                            <i class="fas fa-info-circle"></i>
+                            <p><strong>Demo Notice:</strong> This contact form saves your inquiry locally for demonstration purposes. In production, messages would be sent to our team and stored in a database.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactSuccessModal" class="modal" role="dialog" aria-hidden="true">
+        <div class="modal-content success-content">
+            <button class="modal-close" id="closeContactSuccess" aria-label="Close modal">&times;</button>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Message Sent Successfully!</h2>
+            <p class="success-message">Thank you for contacting Azure Palm Resort. We've received your message and will respond within 24 hours.</p>
+            <button class="btn btn-primary" id="closeContactSuccessBtn">Close</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4><i class="fas fa-umbrella-beach"></i> Azure Palm Resort</h4>
+                    <p>Where Ocean Breeze Meets Luxury</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="TripAdvisor"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rooms.html">Rooms</a></li>
+                        <li><a href="amenities.html">Amenities</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="attractions.html">Local Attractions</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> 1234 Ocean Blvd, Miami Beach, FL 33139</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+13055550100">+1 (305) 555-0100</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:reservations@azurepalmresort.com">reservations@azurepalmresort.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Azure Palm Resort | Demo by Armaan Juneja</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js" defer></script>
+    <script src="assets/js/contact.js" defer></script>
+</body>
+</html>
